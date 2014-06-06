@@ -1,0 +1,27 @@
+[push]
+	default = simple
+[user]
+	name = Jonathan Wiesel
+	email = jonathanwiesel@gmail.com
+[pull]
+	rebase = true
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	path = /usr/local/bin
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[core]
+	editor = atom --wait
+	precomposeunicode = true
+	autocrlf = input
+[fetch]
+	prune = true
+[credential]
+	helper = osxkeychain
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true

@@ -1,0 +1,47 @@
+tap caskroom/cask
+install brew-cask
+
+# Quicklook plugins
+cask install betterzipql
+cask install cert-quicklook
+cask install provisionql
+cask install qlcolorcode
+cask install qlstephen
+cask install qlmarkdown
+cask install quicklook-json
+cask install quicklook-csv
+
+# Apps
+cask install adium
+cask install airmail
+cask install alfred
+cask install atom
+cask install dash
+cask install dropbox
+cask install evernote
+cask install firefox
+cask install gimp
+cask install google-chrome
+cask install heroku-toolbelt
+cask install istat-menus
+cask install iterm2
+cask install jdownloader
+cask install logitech-gaming-software
+cask install mou
+cask install musicbrainz-picard
+cask install robomongo
+cask install sequel-pro
+cask install skype
+cask install slack
+cask install sourcetree
+cask install the-unarchiver
+cask install torbrowser
+cask install utorrent
+cask install vagrant
+cask install virtualbox
+cask install vlc
+
+cask cleanup
+
+# Link installed casks on Alfred.app
+cask alfred link
