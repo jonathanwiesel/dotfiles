@@ -22,10 +22,11 @@ It will do the following:
 
 * Install Homebrew.
 * Install Homebrew apps.
+* Install oh-my-zsh.
+* Setup environment.
+* Install Homebrew Casks.
+* Setup Atom config and packages.
 * Install Alfred workflows.
 * Install Dash docsets.
-* Install oh-my-zsh.
-* Setup dotfiles.
-* Install Homebrew Casks.
 * Install global npm modules.
 * Custom OS X config.
