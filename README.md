@@ -12,7 +12,13 @@ Wait for installation then verify the compiler is present:
 $ gcc --version
 ```
 
-Run the `setup.sh` script that will do the following:
+Run the `setup.sh` script:
+
+```sh
+$ ./setup.sh
+```
+
+It will do the following:
 
 * Install Homebrew.
 * Install Homebrew apps.
