@@ -37,10 +37,14 @@ Alfredapp doesn't support automatic provision so the `alfred` directory has my m
 
 Must be installed manually by double clicking.
 
+**Remember to enable PowerPack before installing workflows.**
+
+Alfred configuration must be done manually :disappointed:.
+
 ***
 
 ## Dash Docsets
 
-Dash doesn't support automatic provision so `dash-docsets` stores the one I use.
+Dash doesn't support automatic provision so `dash-docsets` stores the ones I use.
 
 Remember to install Alfred workflow from Dash settings.
