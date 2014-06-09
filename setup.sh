@@ -25,7 +25,7 @@ echo "----------> Setting Atom configuration and packages..."
 # TODO: atom config
 
 echo "----------> Installing NPM global modules..."
-npm install -g bower express forever grunt-cli nodemon node-inspector yo
+npm install -g bower express forever grunt-cli meanio nodemon node-inspector yo
 
 echo "----------> Setting up custom OS X configuration..."
 ./.osx
