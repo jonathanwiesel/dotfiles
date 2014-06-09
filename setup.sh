@@ -24,12 +24,6 @@ brew bundle Caskfile
 echo "----------> Setting Atom configuration and packages..."
 # TODO: atom config
 
-echo "----------> Installing Alfred Workflows..."
-# TODO: alfred workflows
-
-echo "----------> Installing Dash Docsets..."
-# TODO: dash docsets
-
 echo "----------> Installing NPM global modules..."
 npm install -g bower express forever grunt-cli nodemon node-inspector yo
 
