@@ -15,4 +15,7 @@ install ssh-copy-id
 install tree
 install zsh
 
+tap thoughtbot/formulae
+install rcm
+
 cleanup

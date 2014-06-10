@@ -12,10 +12,13 @@ Wait for installation then verify the compiler is present:
 $ gcc --version
 ```
 
-Run the `setup.sh` script:
+Clone repository in home folder then run the `boostrap.sh` script:
 
 ```sh
-$ ./setup.sh
+$ git clone https://gitlab.com/jonathanwiesel/dotfiles.git
+
+$ cd dotfiles
+dotfiles$ ./boostrap.sh
 ```
 
 It will do the following:
@@ -25,7 +28,7 @@ It will do the following:
 * Install oh-my-zsh.
 * Setup environment.
 * Install Homebrew Casks.
-* Setup Atom config and packages.
+* Install Atom packages.
 * Install global npm modules.
 * Custom OS X config.
 
@@ -33,7 +36,7 @@ It will do the following:
 
 ## Alfred Workflows and Themes
 
-Alfredapp doesn't support automatic provision so the `alfred` directory has my most used workflows and favorite themes.
+Alfred doesn't support automatic provision so the `.alfred` directory has my most used workflows and favorite themes.
 
 Must be installed manually by double clicking.
 
@@ -45,6 +48,6 @@ Alfred configuration must be done manually :disappointed:.
 
 ## Dash Docsets
 
-Dash doesn't support automatic provision so `dash-docsets` stores the ones I use.
+Dash doesn't support automatic provision so `.dash-docsets` stores the ones I use.
 
 Remember to install Alfred workflow from Dash settings.

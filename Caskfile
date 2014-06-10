@@ -13,10 +13,10 @@ cask install quicklook-csv
 
 # Apps
 cask install adium
-cask install airmail
 cask install alfred
 cask install atom
 cask install dash
+cask install dashlane
 cask install dropbox
 cask install evernote
 cask install firefox
