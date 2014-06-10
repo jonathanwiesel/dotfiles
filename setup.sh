@@ -10,13 +10,13 @@ echo "----------> Installing oh-my-zsh..."
 curl -L http://install.ohmyz.sh | sh
 
 echo "----------> Changing shell to ZSH..."
-chsh -s /bin/zsh
+chsh -s $(which zsh)
 
 echo "----------> Linking new shell configuration..."
 # TODO: .zshrc
 
 echo "----------> Reloading ZSH config"
-. ~/.zshrc
+source ~/.zshrc
 
 echo "----------> Installing Homebrew Casks..."
 brew bundle Caskfile
