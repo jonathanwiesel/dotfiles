@@ -12,13 +12,10 @@ Wait for installation then verify the compiler is present:
 $ gcc --version
 ```
 
-Clone repository in home folder then run the `boostrap.sh` script:
+Execute the provision script:
 
 ```sh
-$ git clone https://gitlab.com/jonathanwiesel/dotfiles.git
-
-$ cd dotfiles
-dotfiles$ ./boostrap.sh
+$ curl -L https://gitlab.com/jonathanwiesel/osx-provision/raw/master/bootstrap.sh | sh
 ```
 
 It will do the following:
