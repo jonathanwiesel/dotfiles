@@ -4,30 +4,40 @@ set -e
 
 DOTFILES_DIR=~/.dotfiles
 
-echo ""
-echo "----------> Cloning repository..."
-echo ""
-git clone https://gitlab.com/jonathanwiesel/osx-provision.git $DOTFILES_DIR
+if [ ! -d "$DOTFILES_DIR" ]; then
+    echo "----------> Cloning repository..."
+    echo
+    git clone https://gitlab.com/jonathanwiesel/osx-provision.git $DOTFILES_DIR
+else
+    echo "----------> $DOTFILES_DIR is present."
+    read -p "Are you sure the directory $DOTFILES_DIR contains this repository? [y/n]" -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        echo "Repository is present, no need to clone. Continuing..."
+    else
+        exit
+    fi
+fi
 
 cd $DOTFILES_DIR
 
-echo ""
+echo
 echo "----------> Installing Homebrew..."
-echo ""
+echo
 if hash brew 2>/dev/null; then
     echo "----------> Homebrew is already installed, skipping..."
 else
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 fi
 
-echo ""
+echo
 echo "----------> Installing Homebrew Apps..."
-echo ""
+echo
 brew bundle
 
-echo ""
+echo
 echo "----------> Installing oh-my-zsh..."
-echo ""
+echo
 if [ ! -n "$ZSH" ]; then
     curl -L http://install.ohmyz.sh | sh
 else
@@ -35,41 +45,41 @@ else
 fi
 
 
-echo ""
+echo
 echo "----------> Linking dotfiles configuration..."
-echo ""
+echo
 rcup
 
-echo ""
+echo
 echo "----------> Reloading ZSH config"
-echo ""
+echo
 source ~/.zshrc
 
-echo ""
+echo
 echo "----------> Changing shell to ZSH..."
-echo ""
+echo
 chsh -s $(which zsh)
 
-echo ""
+echo
 echo "----------> Installing Homebrew Casks..."
-echo ""
+echo
 brew bundle Caskfile
 
-echo ""
+echo
 echo "----------> Installing Atom packages..."
-echo ""
+echo
 apm stars --user jonathanwiesel --install
 
-echo ""
+echo
 echo "----------> Installing NPM global modules..."
-echo ""
+echo
 npm install -g bower express forever grunt-cli meanio nodemon node-inspector yo
 
-echo ""
+echo
 echo "----------> Setting up OS X configuration..."
-echo ""
+echo
 source .osx
 
-echo ""
-echo ""
+echo
+echo
 echo "----------> Provisioning process complete."
