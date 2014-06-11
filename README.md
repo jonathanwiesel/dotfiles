@@ -23,11 +23,11 @@ It will do the following:
 * Install Homebrew.
 * Install Homebrew apps.
 * Install oh-my-zsh.
-* Setup environment.
+* Link dotfiles.
 * Install Homebrew Casks.
 * Install Atom packages.
 * Install global npm modules.
-* Custom OS X config.
+* Setup custom OS X config.
 
 ***
 
@@ -39,7 +39,7 @@ Must be installed manually by double clicking.
 
 **Remember to enable PowerPack before installing workflows.**
 
-Alfred configuration must be done manually :disappointed:.
+Settings syncing can be enabled in the Advanced panel.
 
 ***
 
