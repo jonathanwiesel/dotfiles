@@ -53,7 +53,7 @@ fi
 echo
 echo "----------> Linking dotfiles configuration..."
 echo
-rcup
+rcup -d $DOTFILES_DIR
 
 echo
 echo "----------> Reloading ZSH config"
