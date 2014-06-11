@@ -14,7 +14,11 @@ cd $DOTFILES_DIR
 echo ""
 echo "----------> Installing Homebrew..."
 echo ""
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+if hash brew 2>/dev/null; then
+    echo "----------> Homebrew is already installed, skipping..."
+else
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
 
 echo ""
 echo "----------> Installing Homebrew Apps..."
@@ -24,7 +28,12 @@ brew bundle
 echo ""
 echo "----------> Installing oh-my-zsh..."
 echo ""
-curl -L http://install.ohmyz.sh | sh
+if [ ! -n "$ZSH" ]; then
+    curl -L http://install.ohmyz.sh | sh
+else
+    echo "----------> oh-my-zsh is already installed, skipping..."
+fi
+
 
 echo ""
 echo "----------> Linking dotfiles configuration..."
