@@ -9,17 +9,17 @@ if [ ! -d "$DOTFILES_DIR" ]; then
     echo
     git clone https://gitlab.com/jonathanwiesel/osx-provision.git $DOTFILES_DIR
 else
-    echo "----------> $DOTFILES_DIR is present."
+    echo "----------> $DOTFILES_DIR is already present."
     read -p "Are you sure the directory $DOTFILES_DIR contains this repository? [y/n]" -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        echo "Repository is present, no need to clone. Continuing..."
+        echo "---------->  No need to clone. Checking for updates..."
+        cd $DOTFILES_DIR
+        git pull
     else
         exit
     fi
 fi
-
-cd $DOTFILES_DIR
 
 echo
 echo "----------> Installing Homebrew..."
