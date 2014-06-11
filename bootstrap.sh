@@ -4,6 +4,11 @@ set -e
 
 DOTFILES_DIR=~/.dotfiles
 
+if hash gcc 2>/dev/null; then
+    echo "----------> You must install Xcode command-line tools first to proceed. Finishing..."
+    exit
+fi
+
 if [ ! -d "$DOTFILES_DIR" ]; then
     echo "----------> Cloning repository..."
     echo
