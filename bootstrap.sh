@@ -78,7 +78,7 @@ npm install -g bower express forever grunt-cli meanio nodemon node-inspector yo
 echo
 echo "----------> Setting up OS X configuration..."
 echo
-source .osx
+source osx
 
 echo
 echo

@@ -33,7 +33,7 @@ It will do the following:
 
 ## Alfred Workflows and Themes
 
-Alfred doesn't support automatic provision so the `.alfred` directory has my most used workflows and favorite themes.
+Alfred doesn't support automatic provision so the `alfred` directory has my most used workflows and favorite themes.
 
 Must be installed manually by double clicking.
 
@@ -45,6 +45,6 @@ Alfred configuration must be done manually :disappointed:.
 
 ## Dash Docsets
 
-Dash doesn't support automatic provision so `.dash-docsets` stores the ones I use.
+Dash doesn't support automatic provision so `dash-docsets` stores the ones I use.
 
 Remember to install Alfred workflow from Dash settings.
