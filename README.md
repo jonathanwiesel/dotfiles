@@ -48,3 +48,9 @@ Alfred configuration must be done manually :disappointed:.
 Dash doesn't support automatic provision so `dash-docsets` stores the ones I use.
 
 Remember to install Alfred workflow from Dash settings.
+
+***
+
+## License
+
+http://jonathanwiesel.mit-license.org/
