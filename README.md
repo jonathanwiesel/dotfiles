@@ -15,7 +15,7 @@ $ gcc --version
 Execute the provision script:
 
 ```sh
-$ curl -L https://gitlab.com/jonathanwiesel/osx-provision/raw/master/bootstrap.sh | sh
+$ curl -L https://raw.githubusercontent.com/jonathanwiesel/dotfiles/master/bootstrap.sh | sh
 ```
 
 It will do the following:

@@ -12,7 +12,7 @@ fi
 if [ ! -d "$DOTFILES_DIR" ]; then
     echo "----------> Cloning repository..."
     echo
-    git clone https://gitlab.com/jonathanwiesel/osx-provision.git $DOTFILES_DIR
+    git clone https://github.com/jonathanwiesel/dotfiles.git $DOTFILES_DIR
 else
     echo "----------> $DOTFILES_DIR is already present."
     read -p "Are you sure the directory $DOTFILES_DIR contains this repository? [y/n]" -n 1 -r
