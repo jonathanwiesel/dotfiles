@@ -88,10 +88,12 @@ echo "----------> Installing NPM global modules..."
 echo
 npm install -g bower express forever grunt-cli meanio nodemon node-inspector yo
 
+read -p "----------> Would you like to setup the custom OS X configuration? [y/n]" -n 1 -r
 echo
-echo "----------> Setting up OS X configuration..."
-echo
-source osx
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "----------> Setting up OS X config..."
+    source osx
+fi
 
 echo
 echo
