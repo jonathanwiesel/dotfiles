@@ -54,6 +54,7 @@ fi
 echo
 echo "----------> Linking dotfiles configuration..."
 echo
+rcup -d $DOTFILES_DIR rcrc
 rcup -d $DOTFILES_DIR
 
 echo
