@@ -11,7 +11,7 @@ if hash gcc 2>/dev/null; then
 fi
 
 if [ ! -d "$DOTFILES_DIR" ]; then
-    echo "----------> Cloning repository..."
+    echo "----------> Cloning repository in $DOTFILES_DIR ..."
     echo
     git clone https://github.com/jonathanwiesel/dotfiles.git $DOTFILES_DIR
     cd $DOTFILES_DIR
