@@ -16,7 +16,6 @@ cask install adium
 cask install alfred
 cask install atom
 cask install dash
-cask install dashlane
 cask install dropbox
 cask install evernote
 cask install firefox
