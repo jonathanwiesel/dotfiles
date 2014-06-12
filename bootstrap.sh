@@ -3,6 +3,7 @@
 set -e
 
 DOTFILES_DIR=~/.dotfiles
+ITERM_SETTINGS=com.googlecode.iterm2.plist
 
 if hash gcc 2>/dev/null; then
     echo "----------> You must install Xcode command-line tools first to proceed. Finishing..."
@@ -56,6 +57,11 @@ echo "----------> Linking dotfiles configuration..."
 echo
 rcup -d $DOTFILES_DIR rcrc
 rcup -d $DOTFILES_DIR
+
+echo
+echo "----------> Linking iTerm config..."
+echo
+ln -sfn "$ITERM_SETTINGS" "~/Library/Preferences/$ITERM_SETTINGS"
 
 echo
 echo "----------> Reloading ZSH config"
