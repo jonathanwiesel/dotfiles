@@ -5,7 +5,7 @@ set -e
 DOTFILES_DIR=~/.dotfiles
 ITERM_SETTINGS=com.googlecode.iterm2.plist
 
-if hash gcc 2>/dev/null; then
+if ! hash gcc 2>/dev/null; then
     echo "----------> You must install Xcode command-line tools first to proceed. Finishing..."
     exit
 fi
