@@ -71,14 +71,14 @@ echo
 ln -sfn $ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 
 echo
-echo "----------> Reloading ZSH config"
-echo
-source ~/.zshrc
-
-echo
 echo "----------> Changing shell to ZSH..."
 echo
 chsh -s $(which zsh)
+
+echo
+echo "----------> Reloading ZSH config"
+echo
+source ~/.zshrc
 
 echo
 read -p "Do you want to install default Casks? [y/n] " -n 1 -r
