@@ -63,7 +63,7 @@ rcup -d $DOTFILES_DIR
 echo
 echo "----------> Linking iTerm config..."
 echo
-ln -sfn "$ITERM_SETTINGS" "~/Library/Preferences/$ITERM_SETTINGS"
+ln -sfn $ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 
 echo
 echo "----------> Reloading ZSH config"
