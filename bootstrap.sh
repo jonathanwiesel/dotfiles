@@ -5,13 +5,15 @@ set -e
 DOTFILES_DIR=~/.dotfiles
 ITERM_SETTINGS=com.googlecode.iterm2.plist
 
+echo
+
 if ! hash gcc 2>/dev/null; then
     echo "----------> You must install Xcode command-line tools first to proceed. Finishing..."
     exit
 fi
 
 if [ ! -d "$DOTFILES_DIR" ]; then
-    echo "----------> Cloning repository in $DOTFILES_DIR ..."
+    echo "----------> Downloading repository..."
     echo
     git clone https://github.com/jonathanwiesel/dotfiles.git $DOTFILES_DIR
     cd $DOTFILES_DIR
