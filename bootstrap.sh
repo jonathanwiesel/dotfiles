@@ -19,7 +19,7 @@ if [ ! -d "$DOTFILES_DIR" ]; then
     cd $DOTFILES_DIR
 else
     echo "----------> $DOTFILES_DIR is already present."
-    read -p "Are you sure the directory $DOTFILES_DIR contains this repository? [y/n] " -n 1 -r
+    read -p "Are you sure the directory $DOTFILES_DIR contains this repository? [y/n] " -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         echo "---------->  No need to clone. Checking for updates..."
@@ -71,16 +71,11 @@ echo
 ln -sfn $ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 
 echo
-echo "----------> Installing Atom packages..."
-echo
-apm stars --user jonathanwiesel --install
-
-echo
 echo "----------> Installing NPM global modules..."
 echo
 npm install -g bower express forever grunt-cli meanio nodemon node-inspector yo
 
-read -p "----------> Would you like to setup the custom OS X configuration? [y/n] " -n 1 -r
+read -p "----------> Would you like to setup the custom OS X configuration? [y/n] " -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "----------> Setting up OS X config..."
@@ -88,7 +83,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 echo
-read -p "Do you want to install default Casks? [y/n] " -n 1 -r
+read -p "Do you want to install default Casks? [y/n] " -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "----------> Installing Homebrew Casks..."
@@ -96,6 +91,15 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     brew bundle Caskfile
 else
     echo "----------> Skipping cask installation"
+fi
+
+echo
+if ! hash apm 2>/dev/null; then
+    echo "----------> Atom is not installed. Skipping atom packages installation..."
+else
+    echo "----------> Installing Atom packages..."
+    echo
+    apm stars --user jonathanwiesel --install
 fi
 
 echo
