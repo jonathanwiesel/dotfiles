@@ -1,4 +1,5 @@
 update
+upgrade
 
 install git
 install mariadb
