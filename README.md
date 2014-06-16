@@ -33,10 +33,10 @@ It will do the following:
 * Install Homebrew apps.
 * Install oh-my-zsh.
 * Link dotfiles.
-* Install Homebrew Casks.
 * Install Atom packages.
 * Install global npm modules.
 * Setup custom OS X config.
+* Install Homebrew Casks.
 
 ***
 

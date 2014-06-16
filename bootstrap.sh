@@ -45,7 +45,7 @@ echo
 brew bundle
 
 if ! hash zsh 2>/dev/null; then
-    echo "----------> You must the ZSH shell to proceed. Finishing..."
+    echo "----------> You must have the ZSH shell to proceed. Finishing..."
     exit
 fi
 
@@ -71,28 +71,6 @@ echo
 ln -sfn $ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 
 echo
-echo "----------> Changing shell to ZSH..."
-echo
-chsh -s $(which zsh)
-
-echo
-echo "----------> Reloading ZSH config"
-echo
-source ~/.zshrc
-
-echo
-read -p "Do you want to install default Casks? [y/n] " -n 1 -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "----------> Installing Homebrew Casks..."
-    echo
-    brew bundle Caskfile
-else
-    echo "----------> Skipping cask installation"
-fi
-
-
-echo
 echo "----------> Installing Atom packages..."
 echo
 apm stars --user jonathanwiesel --install
@@ -108,6 +86,22 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "----------> Setting up OS X config..."
     source osx
 fi
+
+echo
+read -p "Do you want to install default Casks? [y/n] " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "----------> Installing Homebrew Casks..."
+    echo
+    brew bundle Caskfile
+else
+    echo "----------> Skipping cask installation"
+fi
+
+echo
+echo "----------> Changing shell to ZSH..."
+echo
+chsh -s $(which zsh)
 
 echo
 echo
