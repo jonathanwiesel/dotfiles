@@ -44,6 +44,11 @@ echo "----------> Installing Homebrew Apps..."
 echo
 brew bundle
 
+if ! hash zsh 2>/dev/null; then
+    echo "----------> You must the ZSH shell to proceed. Finishing..."
+    exit
+fi
+
 echo
 echo "----------> Installing oh-my-zsh..."
 echo

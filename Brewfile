@@ -14,7 +14,6 @@ install rsync
 install ruby-build
 install ssh-copy-id
 install tree
-install zsh
 
 tap thoughtbot/formulae
 install rcm
