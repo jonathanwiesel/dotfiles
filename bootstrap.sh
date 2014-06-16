@@ -74,9 +74,16 @@ echo
 chsh -s $(which zsh)
 
 echo
-echo "----------> Installing Homebrew Casks..."
+read -p "Do you want to install default Casks? [y/n]" -n 1 -r
 echo
-brew bundle Caskfile
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "----------> Installing Homebrew Casks..."
+    echo
+    brew bundle Caskfile
+else
+    echo "----------> Skipping cask installation"
+fi
+
 
 echo
 echo "----------> Installing Atom packages..."
