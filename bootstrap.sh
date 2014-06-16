@@ -47,7 +47,7 @@ brew bundle
 echo
 echo "----------> Installing oh-my-zsh..."
 echo
-if [ ! -n "$ZSH" ]; then
+if [ ! -d ~/.oh-my-zsh ]; then
     curl -L http://install.ohmyz.sh | sh
 else
     echo "----------> oh-my-zsh is already installed, skipping..."
