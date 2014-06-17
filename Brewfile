@@ -14,6 +14,7 @@ install rbenv-gem-rehash
 install redis
 install rsync
 install ruby-build
+install shellcheck
 install ssh-copy-id
 install tree
 
