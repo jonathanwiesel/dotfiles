@@ -41,7 +41,7 @@ else
             git pull
 
             echo
-            echo "----------> New changes pulled. Please run bootstraping script again."
+            echo "----------> Repository updated! Please run bootstraping script again."
             exit
         else
             echo "----------> Local repository is dirty, please clean and try again."
@@ -54,11 +54,12 @@ else
 fi
 
 echo
-echo "----------> Installing Homebrew..."
-echo
+
 if hash brew 2>/dev/null; then
     echo "----------> Homebrew is already installed, skipping..."
 else
+    echo "----------> Installing Homebrew..."
+    echo
     ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 fi
 
@@ -78,9 +79,10 @@ if ! hash zsh 2>/dev/null; then
 fi
 
 echo
-echo "----------> Installing oh-my-zsh..."
-echo
+
 if [ ! -d ~/.oh-my-zsh ]; then
+    echo "----------> Installing oh-my-zsh..."
+    echo
     curl -L http://install.ohmyz.sh | sh
 else
     echo "----------> oh-my-zsh is already installed, skipping..."
@@ -108,6 +110,8 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "----------> Setting up OS X config..."
     source osx
+else
+    echo "----------> Skipping OS X config..."
 fi
 
 echo
@@ -118,7 +122,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo
     brew bundle Caskfile
 else
-    echo "----------> Skipping cask installation"
+    echo "----------> Skipping cask installation..."
 fi
 
 echo
