@@ -26,7 +26,9 @@ alias bc="brew cask"
 alias bs="brew services"
 
 # Easier navigation
+alias -="cd -"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias _=sudo
