@@ -70,13 +70,11 @@ fi
 
 echo
 echo "----------> Linking dotfiles configuration..."
-echo
 rcup -d $DOTFILES_DIR rcrc
 rcup -d $DOTFILES_DIR
 
 echo
 echo "----------> Linking iTerm config..."
-echo
 ln -sfn $ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 
 echo
