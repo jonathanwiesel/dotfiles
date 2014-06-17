@@ -27,7 +27,6 @@ cask install iterm2
 cask install jdownloader
 cask install logitech-gaming-software
 cask install mou
-cask install musicbrainz-picard
 cask install robomongo
 cask install sequel-pro
 cask install skype
