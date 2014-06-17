@@ -29,6 +29,9 @@ It will do the following:
 * Setup custom OS X config.
 * Install Homebrew Casks.
 
+If you have a local config you want to use, place it on `~/.zshrc.local`.
+**Don't modify the .zshrc symlink.**
+
 ***
 
 ## Alfred Workflows and Themes

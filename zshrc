@@ -19,3 +19,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
+
+# Local config
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
