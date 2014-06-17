@@ -22,9 +22,32 @@ else
     read -p "Are you sure the directory $DOTFILES_DIR contains this repository? [y/n] " -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        echo "---------->  No need to clone. Checking for updates..."
+        echo "----------> No need to clone. Checking for updates..."
         cd $DOTFILES_DIR
-        git pull
+
+        git remote update
+
+        LOCAL=$(git rev-parse @)
+        REMOTE=$(git rev-parse @{u})
+        BASE=$(git merge-base @ @{u})
+
+        echo
+        if [ $LOCAL = $REMOTE ]; then
+            echo "----------> Repository up-to-date. Continuing..."
+        elif [ $LOCAL = $BASE ]; then
+            echo "----------> New version available. Pulling new changes..."
+            echo
+
+            git pull
+
+            echo
+            echo "----------> New changes pulled. Please run bootstraping script again."
+            exit
+        else
+            echo "----------> Local repository is dirty, please clean and try again."
+            exit
+        fi
+
     else
         exit
     fi
