@@ -45,8 +45,13 @@ echo
 brew bundle
 
 if ! hash zsh 2>/dev/null; then
-    echo "----------> You must have the ZSH shell to proceed. Finishing..."
-    exit
+    echo
+    echo "----------> ZSH is not present, Installing..."
+    echo
+    brew install zsh
+
+    echo "----------> Provide password to link ZSH to shell list: "
+    sudo sh -c 'echo $(which zsh) >> /etc/shells'
 fi
 
 echo

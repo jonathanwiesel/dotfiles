@@ -12,15 +12,6 @@ Wait for installation then verify the compiler is present:
 $ gcc --version
 ```
 
-Verify you have ZSH:
-
-```sh
-$ zsh --version
-zsh 5.0.2 (x86_64-apple-darwin13.0)
-```
-
-> If not present you can install it via Homebrew then link to it by adding `/usr/local/bin/zsh` to `/etc/shells`
-
 Execute the provision script:
 
 ```sh
