@@ -8,6 +8,7 @@ alias gpl="git pull"
 alias gch="git checkout"
 alias gb="git branch"
 alias gr="git remote"
+alias gl="git log"
 
 # Vagrant aliases
 alias vu="vagrant up"
