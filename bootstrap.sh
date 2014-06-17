@@ -89,7 +89,7 @@ read -p "----------> Would you like to setup the custom OS X configuration? [y/n
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "----------> Setting up OS X config..."
-    source osx
+    ./osx
 else
     echo "----------> Skipping OS X config..."
 fi
