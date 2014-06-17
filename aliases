@@ -24,6 +24,7 @@ alias vs="vagrant status"
 # Homebrew aliases
 alias bc="brew cask"
 alias bs="brew services"
+alias bl="brew list"
 
 # Easier navigation
 alias -="cd -"
