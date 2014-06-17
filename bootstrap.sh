@@ -134,10 +134,12 @@ else
     apm stars --user jonathanwiesel --install
 fi
 
-echo
-echo "----------> Changing shell to ZSH..."
-echo
-chsh -s $(which zsh)
+if [[ "$SHELL" != */zsh ]]; then
+    echo
+    echo "----------> Changing shell to ZSH..."
+    echo
+    chsh -s $(which zsh)
+fi
 
 echo
 echo
