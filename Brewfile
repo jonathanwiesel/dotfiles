@@ -4,6 +4,7 @@ upgrade
 install git
 install docker
 install boot2docker
+install heroku-toolbelt
 install mariadb
 install mongodb
 install nginx

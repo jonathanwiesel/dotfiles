@@ -21,7 +21,6 @@ cask install evernote
 cask install firefox
 cask install gimp
 cask install google-chrome
-cask install heroku-toolbelt
 cask install istat-menus
 cask install iterm2
 cask install jdownloader
