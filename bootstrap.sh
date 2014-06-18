@@ -4,6 +4,7 @@ set -e
 
 DOTFILES_DIR=~/.dotfiles
 ITERM_SETTINGS=com.googlecode.iterm2.plist
+ALFRED_WF_URL=https://mega.co.nz/#F!lQBViKAb!bcBAqkv0Kyr21SeVzQ0zzA
 
 echo
 
@@ -99,6 +100,15 @@ else
     echo "----------> Installing Atom packages..."
     echo
     apm stars --user jonathanwiesel --install
+fi
+
+echo
+read -p "Do you want to download Alfred workflows? [y/n] " -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    open $ALFRED_WF_URL
+else
+    echo "----------> Skipping Alfred workflows..."
 fi
 
 if [[ "$SHELL" != */zsh ]]; then

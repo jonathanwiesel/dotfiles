@@ -35,9 +35,8 @@ If you have a local config you want to use, place it on `~/.zshrc.local`.
 
 ## Alfred Workflows and Themes
 
-Alfred doesn't support automatic provision so the `alfred` directory has my most used workflows and favorite themes.
-
-Must be installed manually by double clicking.
+Alfred doesn't support automatic provision so in the bootstrapping process you'll be asked if you want the workflows,
+then you'll be taken to my package download page.
 
 **Remember to enable PowerPack before installing workflows.**
 
