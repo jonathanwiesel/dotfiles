@@ -33,3 +33,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias _=sudo
+
+alias ls='ls -G'
+alias reload!=". ~/.zshrc"
