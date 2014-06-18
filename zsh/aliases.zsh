@@ -27,7 +27,7 @@ alias bs="brew services"
 alias bl="brew list"
 
 # Easier navigation
-alias -="cd -"
+alias -- -="cd -"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."

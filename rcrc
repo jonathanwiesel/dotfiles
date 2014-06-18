@@ -1,2 +1,0 @@
-EXCLUDES="Brewfile Caskfile bootstrap.sh dash-docsets README.md osx com.googlecode.iterm2.plist alfred/*"
-DOTFILES_DIRS="$HOME/.dotfiles"

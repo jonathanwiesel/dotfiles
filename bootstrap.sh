@@ -58,20 +58,9 @@ if ! hash zsh 2>/dev/null; then
 fi
 
 echo
-
-if [ ! -d ~/.oh-my-zsh ]; then
-    echo "----------> Installing oh-my-zsh..."
-    echo
-    curl -L http://install.ohmyz.sh | sh
-else
-    echo "----------> oh-my-zsh is already installed, skipping..."
-fi
-
-
-echo
 echo "----------> Linking dotfiles configuration..."
-rcup -d $DOTFILES_DIR rcrc
-rcup -d $DOTFILES_DIR
+ln -sfn $DOTFILES_DIR/zsh/zshrc $HOME/.zshrc
+ln -sfn $DOTFILES_DIR/gitconfig $HOME/.gitconfig
 
 echo
 echo "----------> Linking iTerm config..."

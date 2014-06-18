@@ -18,7 +18,4 @@ install ruby-build
 install ssh-copy-id
 install tree
 
-tap thoughtbot/formulae
-install rcm
-
 cleanup

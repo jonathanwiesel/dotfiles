@@ -22,7 +22,6 @@ It will do the following:
 
 * Install Homebrew.
 * Install Homebrew apps.
-* Install oh-my-zsh.
 * Link dotfiles.
 * Install Atom packages.
 * Install global npm modules.
