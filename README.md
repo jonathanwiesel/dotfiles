@@ -46,7 +46,30 @@ Settings syncing can be enabled in the Advanced panel.
 
 ## Dash Docsets
 
-Dash doesn't support automatic provision so `dash-docsets` stores the ones I use.
+Dash doesn't support automatic provision yet. My installed docsets are:
+
+```
+Angular
+Applescript
+Bash
+Bootstrap
+CSS
+Express
+Grunt
+HTML
+iOS
+Jade
+JavaScript
+jQuery
+Man Pages
+MongoDB
+Mongoose
+Nginx
+Node.js
+PHP
+Redis
+Vagrant
+```
 
 Remember to install Alfred workflow from Dash settings.
 
