@@ -25,7 +25,7 @@ cask install istat-menus
 cask install iterm2
 cask install jdownloader
 cask install logitech-gaming-software
-cask install mou
+cask install macdown
 cask install robomongo
 cask install sequel-pro
 cask install skype
