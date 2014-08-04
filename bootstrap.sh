@@ -66,7 +66,7 @@ ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTING
 echo
 echo "----------> Installing NPM global modules..."
 echo
-npm install -g bower express forever grunt-cli meanio nodemon node-inspector yo
+npm install -g bower express-generator forever grunt-cli meanio nodemon node-inspector sails yo
 
 echo
 read -p "----------> Would you like to setup the custom OS X configuration? [y/n] " -r
