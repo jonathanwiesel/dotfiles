@@ -2,11 +2,11 @@
 # taken from https://github.com/albertogg/dotfiles/blob/master/zsh/zshrc.symlink
 
 # Path to this dotfiles is $ZSH
-export ZSH=$HOME/.dotfiles
+export ZSH=$HOME/.dotfiles/zsh
 
 # Get all the .zsh files
 typeset -U config_files
-config_files=($ZSH/zsh/*.zsh)
+config_files=($ZSH/*.zsh)
 
 # Load all path.zsh files
 for file in ${(M)config_files:#*/exports.zsh}
@@ -33,7 +33,7 @@ done
 unset config_files
 
 # Load theme
-source $ZSH/zsh/*.zsh-theme
+source $ZSH/*.zsh-theme
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
