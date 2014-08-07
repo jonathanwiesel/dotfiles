@@ -31,6 +31,7 @@ cask install sequel-pro
 cask install skype
 cask install slack
 cask install sourcetree
+cask install teamviewer
 cask install the-unarchiver
 cask install torbrowser
 cask install utorrent
