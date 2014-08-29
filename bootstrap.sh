@@ -5,6 +5,7 @@ set -e
 DOTFILES_DIR=~/.dotfiles
 ITERM_SETTINGS=com.googlecode.iterm2.plist
 ALFRED_WF_URL=https://mega.co.nz/#F!lQBViKAb!bcBAqkv0Kyr21SeVzQ0zzA
+GOPATH=$HOME/.go
 
 echo
 
@@ -52,6 +53,10 @@ if ! hash zsh 2>/dev/null; then
 
     echo "----------> Provide password to link ZSH to shell list: "
     sudo sh -c 'echo $(which zsh) >> /etc/shells'
+fi
+
+if [ ! -d "$GOPATH" ]; then
+  mkdir $GOPATH
 fi
 
 echo
