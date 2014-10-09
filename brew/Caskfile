@@ -24,6 +24,7 @@ cask install google-chrome
 cask install istat-menus
 cask install iterm2
 cask install jdownloader
+cask install licecap
 cask install logitech-gaming-software
 cask install macdown
 cask install robomongo
