@@ -36,8 +36,8 @@ cask install teamviewer
 cask install the-unarchiver
 cask install torbrowser
 cask install utorrent
-cask install vagrant
 cask install virtualbox
+cask install vagrant
 cask install vlc
 
 cask cleanup
