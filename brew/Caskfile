@@ -1,46 +1,46 @@
-tap caskroom/cask
-install brew-cask
+brew tap caskroom/cask
+brew install brew-cask
 
 # Quicklook plugins
-cask install betterzipql
-cask install cert-quicklook
-cask install provisionql
-cask install qlcolorcode
-cask install qlstephen
-cask install qlmarkdown
-cask install quicklook-json
-cask install quicklook-csv
+brew cask install betterzipql
+brew cask install cert-quicklook
+brew cask install provisionql
+brew cask install qlcolorcode
+brew cask install qlstephen
+brew cask install qlmarkdown
+brew cask install quicklook-json
+brew cask install quicklook-csv
 
 # Apps
-cask install adium
-cask install alfred
-cask install atom
-cask install dash
-cask install dropbox
-cask install evernote
-cask install firefox
-cask install gimp
-cask install google-chrome
-cask install istat-menus
-cask install iterm2
-cask install jdownloader
-cask install licecap
-cask install logitech-gaming-software
-cask install macdown
-cask install robomongo
-cask install sequel-pro
-cask install skype
-cask install slack
-cask install sourcetree
-cask install teamviewer
-cask install the-unarchiver
-cask install torbrowser
-cask install utorrent
-cask install virtualbox
-cask install vagrant
-cask install vlc
+brew cask install adium
+brew cask install alfred
+brew cask install atom
+brew cask install dash
+brew cask install dropbox
+brew cask install evernote
+brew cask install firefox
+brew cask install gimp
+brew cask install google-chrome
+brew cask install istat-menus
+brew cask install iterm2
+brew cask install jdownloader
+brew cask install licecap
+brew cask install logitech-gaming-software
+brew cask install macdown
+brew cask install robomongo
+brew cask install sequel-pro
+brew cask install skype
+brew cask install slack
+brew cask install sourcetree
+brew cask install teamviewer
+brew cask install the-unarchiver
+brew cask install torbrowser
+brew cask install utorrent
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install vlc
 
-cask cleanup
+brew cask cleanup
 
 # Link installed casks on Alfred.app
-cask alfred link
+brew cask alfred link

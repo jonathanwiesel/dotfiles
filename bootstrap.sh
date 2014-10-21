@@ -43,7 +43,7 @@ fi
 echo
 echo "----------> Installing Homebrew Apps..."
 echo
-brew bundle $DOTFILES_DIR/brew/Brewfile
+source $DOTFILES_DIR/brew/Brewfile
 
 if ! hash zsh 2>/dev/null; then
     echo
@@ -89,7 +89,7 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "----------> Installing Homebrew Casks..."
     echo
-    brew bundle $DOTFILES_DIR/brew/Caskfile
+    source $DOTFILES_DIR/brew/Caskfile
 else
     echo "----------> Skipping cask installation..."
 fi

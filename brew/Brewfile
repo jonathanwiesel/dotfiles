@@ -1,22 +1,22 @@
-update
-upgrade
+brew update
+brew upgrade
 
-install git
-install docker
-install boot2docker
-install go
-install heroku-toolbelt
-install mariadb
-install mongodb
-install nginx
-install nmap
-install node
-install rbenv
-install rbenv-gem-rehash
-install redis
-install rsync
-install ruby-build
-install ssh-copy-id
-install tree
+brew install git
+brew install docker
+brew install boot2docker
+brew install go
+brew install heroku-toolbelt
+brew install mariadb
+brew install mongodb
+brew install nginx
+brew install nmap
+brew install node
+brew install rbenv
+brew install rbenv-gem-rehash
+brew install redis
+brew install rsync
+brew install ruby-build
+brew install ssh-copy-id
+brew install tree
 
-cleanup
+brew cleanup
