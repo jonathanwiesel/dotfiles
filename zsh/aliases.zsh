@@ -1,5 +1,5 @@
 # Git aliases
-alias gs="git status"
+alias gs="git status -s"
 alias ga="git add"
 alias gaa="git add --all"
 alias gc="git commit -m "
@@ -8,7 +8,7 @@ alias gpl="git pull"
 alias gch="git checkout"
 alias gb="git branch"
 alias gr="git remote"
-alias gl="git log"
+alias gl="git log --online --decorate --all --graph"
 
 # Vagrant aliases
 alias vu="vagrant up"
