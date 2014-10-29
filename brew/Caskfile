@@ -27,6 +27,7 @@ brew cask install jdownloader
 brew cask install licecap
 brew cask install logitech-gaming-software
 brew cask install macdown
+brew cask install mysqlworkbench
 brew cask install pgweb
 brew cask install robomongo
 brew cask install sequel-pro
