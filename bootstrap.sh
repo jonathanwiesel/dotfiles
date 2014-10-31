@@ -4,7 +4,6 @@ set -e
 
 DOTFILES_DIR=~/.dotfiles
 ITERM_SETTINGS=com.googlecode.iterm2.plist
-ALFRED_WF_URL=https://mega.co.nz/#F!lQBViKAb!bcBAqkv0Kyr21SeVzQ0zzA
 GOPATH=$HOME/.go
 
 echo
@@ -71,7 +70,7 @@ ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTING
 echo
 echo "----------> Installing NPM global modules..."
 echo
-npm install -g bower express-generator forever grunt-cli meanio nodemon node-inspector sails yo
+npm install -g awm bower express-generator forever grunt-cli meanio nodemon node-inspector sails yo
 
 echo
 read -p "----------> Would you like to setup the custom OS X configuration? [y/n] " -r
@@ -104,10 +103,10 @@ else
 fi
 
 echo
-read -p "Do you want to download Alfred workflows? [y/n] " -r
+read -p "Do you want to install Alfred workflows? [y/n] " -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    open $ALFRED_WF_URL
+    source $DOTFILES_DIR/alfred/workflows.sh
 else
     echo "----------> Skipping Alfred workflows..."
 fi
