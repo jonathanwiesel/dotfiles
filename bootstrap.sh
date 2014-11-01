@@ -103,7 +103,7 @@ else
 fi
 
 echo
-read -p "Do you want to install Alfred workflows? [y/n] " -r
+read -p "Do you want to install Alfred workflows? (Remeber to enable PowerPack before this!) [y/n] " -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     source $DOTFILES_DIR/alfred/workflows.sh

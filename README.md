@@ -27,6 +27,7 @@ It will do the following:
 * Install global npm modules.
 * Setup custom OS X config.
 * Install Homebrew Casks.
+* Install Alfred workflows.
 
 If you have a local config you want to use, place it on `~/.zshrc.local`.
 **Don't modify the .zshrc symlink.**
@@ -35,8 +36,11 @@ If you have a local config you want to use, place it on `~/.zshrc.local`.
 
 ## Alfred Workflows and Themes
 
-Alfred doesn't support automatic provision so in the bootstrapping process you'll be asked if you want the workflows,
-then you'll be taken to my package download page.
+~~Alfred doesn't support automatic provision so in the bootstrapping process you'll be asked if you want the workflows,
+then you'll be taken to my package download page.~~
+
+I'm using [awm](https://github.com/jonathanwiesel/awm) for automatic workflow provisioning. However a little continuity hack
+is implemented since `awm` still needs user intervention to install workflows.
 
 **Remember to enable PowerPack before installing workflows.**
 
