@@ -19,6 +19,7 @@ brew cask install dash
 brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
+brew cask install get-lyrical
 brew cask install gimp
 brew cask install google-chrome
 brew cask install istat-menus
