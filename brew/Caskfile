@@ -42,8 +42,8 @@ brew cask install spotify
 brew cask install teamviewer
 brew cask install the-unarchiver
 brew cask install torbrowser
+brew cask install transmission
 brew cask install tunnelbear
-brew cask install utorrent
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install vlc
