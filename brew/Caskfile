@@ -30,6 +30,7 @@ brew cask install licecap
 brew cask install logitech-gaming-software
 brew cask install macdown
 brew cask install mysqlworkbench
+brew cask install openemu
 brew cask install pgweb
 brew cask install plex-media-server
 brew cask install robomongo
