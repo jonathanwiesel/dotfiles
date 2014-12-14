@@ -6,6 +6,7 @@ brew install docker
 brew install boot2docker
 brew install go
 brew install heroku-toolbelt
+brew install icdiff
 brew install mariadb
 brew install mongodb
 brew install nginx
