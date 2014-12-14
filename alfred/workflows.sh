@@ -12,6 +12,7 @@ WORKFLOWS=(
 	com.fniephaus.homebrew
 	com.kopepasah.google-url-shortener
 	com.spr.translate
+	designandsuch.alfred.units
 	florian.down
 	jw.randomopener
 	jw.reminders
