@@ -10,6 +10,7 @@ WORKFLOWS=(
 	carlosnz.timezones
 	com.farrell.pkgman.alfredworkflow
 	com.fniephaus.homebrew
+	com.hackademic.ka_torrents
 	com.kopepasah.google-url-shortener
 	com.spr.translate
 	designandsuch.alfred.units
