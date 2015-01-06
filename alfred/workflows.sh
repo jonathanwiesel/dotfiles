@@ -17,6 +17,7 @@ WORKFLOWS=(
 	florian.down
 	jw.randomopener
 	jw.reminders
+	net.exit4web.hash
 	pro.elms.paul.speedtest
 	tylereich.colors
 )
