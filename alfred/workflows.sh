@@ -8,6 +8,7 @@
 
 WORKFLOWS=(
 	carlosnz.timezones
+	ch.milan.hiddenfiles
 	com.farrell.pkgman.alfredworkflow
 	com.fniephaus.homebrew
 	com.hackademic.ka_torrents
