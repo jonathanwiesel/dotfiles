@@ -1,6 +1,8 @@
 brew tap caskroom/cask
 brew install brew-cask
 
+brew tap caskroom/versions
+
 # Quicklook plugins
 brew cask install betterzipql
 brew cask install cert-quicklook
@@ -26,7 +28,7 @@ brew cask install google-chrome
 brew cask install handbrake
 brew cask install istat-menus
 brew cask install iterm2
-brew cask install jdownloader
+brew cask install jdownloader2
 brew cask install licecap
 brew cask install logitech-gaming-software
 brew cask install macdown
