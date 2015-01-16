@@ -1,6 +1,8 @@
 brew update
 brew upgrade
 
+brew tap homebrew/dupes
+
 brew install git
 brew install docker
 brew install boot2docker
