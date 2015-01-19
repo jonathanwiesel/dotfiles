@@ -37,6 +37,13 @@ else
     echo "----------> Installing Homebrew..."
     echo
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+    echo
+    brew doctor
+
+    if [ $? -ne 0 ]; then
+      echo "You need to fix the warnings/errors thrown by brew doctor. Then run the script again."
+    fi
 fi
 
 echo
