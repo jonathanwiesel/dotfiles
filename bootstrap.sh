@@ -77,10 +77,6 @@ echo "----------> Linking dotfiles configuration..."
 ln -sfn $DOTFILES_DIR/zsh/zshrc $HOME/.zshrc
 ln -sfn $DOTFILES_DIR/git/gitconfig $HOME/.gitconfig
 
-echo
-echo "----------> Linking iTerm config..."
-ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
-
 if hash npm 2>/dev/null; then
   echo
   read -p "----------> Would you like to install default NPM global modules? [y/n] " -r
@@ -113,6 +109,10 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "----------> Installing Homebrew Casks..."
     echo
     source $DOTFILES_DIR/brew/Caskfile
+
+    echo
+    echo "----------> Linking iTerm config..."
+    ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 else
     echo "----------> Skipping cask installation..."
 fi
