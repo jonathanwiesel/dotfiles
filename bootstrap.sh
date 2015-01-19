@@ -47,9 +47,16 @@ else
 fi
 
 echo
-echo "----------> Installing Homebrew Apps..."
+read -p "----------> Would you like to install default Homebrew formulas? [y/n] " -r
 echo
-source $DOTFILES_DIR/brew/Brewfile
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  echo
+  echo "----------> Installing Homebrew formulas..."
+  echo
+  source $DOTFILES_DIR/brew/Brewfile
+else
+  echo "----------> Skipping Homebrew formulas installation..."
+fi
 
 if ! hash zsh 2>/dev/null; then
     echo
