@@ -53,6 +53,3 @@ brew cask install vagrant
 brew cask install vlc
 
 brew cask cleanup
-
-# Link installed casks on Alfred.app
-brew cask alfred link
