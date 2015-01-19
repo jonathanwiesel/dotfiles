@@ -55,7 +55,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo
   source $DOTFILES_DIR/brew/Brewfile
 else
-  echo "----------> Skipping Homebrew formulas installation..."
+  echo "----------> Skipping Homebrew formulas..."
 fi
 
 if ! hash zsh 2>/dev/null; then
@@ -81,10 +81,20 @@ echo
 echo "----------> Linking iTerm config..."
 ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 
-echo
-echo "----------> Installing NPM global modules..."
-echo
-npm install -g awm bower express-generator forever grunt-cli mean-cli nodemon node-inspector sails yo
+if hash npm 2>/dev/null; then
+  echo
+  read -p "----------> Would you like to install default NPM global modules? [y/n] " -r
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo
+    echo "----------> Installing NPM global modules..."
+    echo
+    npm install -g awm bower express-generator forever grunt-cli mean-cli nodemon node-inspector sails yo
+  else
+    echo "----------> Skipping NPM global modules..."
+  fi
+fi
+
 
 echo
 read -p "----------> Would you like to setup the custom OS X configuration? [y/n] " -r
