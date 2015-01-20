@@ -10,6 +10,7 @@ alias gb="git branch"
 alias gr="git remote"
 alias gl="git log --oneline --decorate --all --graph"
 alias gd="git difftool --extcmd 'icdiff --highlight --line-numbers' | less"
+alias gdt="git difftool"
 
 # Vagrant aliases
 alias vu="vagrant up"
