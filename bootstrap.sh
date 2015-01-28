@@ -47,15 +47,20 @@ else
 fi
 
 echo
-read -p "----------> Would you like to install default Homebrew formulas? [y/n] " -r
+read -p "----------> Would you like to install default Homebrew formulas and Casks? [y/n] " -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo
-  echo "----------> Installing Homebrew formulas..."
+  echo "----------> Installing Homebrew formulas and casks..."
   echo
-  source $DOTFILES_DIR/brew/Brewfile
+
+  brew tap Homebrew/brewdler
+  brew brewdle
+
+  echo "----------> Linking iTerm config..."
+  ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 else
-  echo "----------> Skipping Homebrew formulas..."
+  echo "----------> Skipping Homebrew formulas and casks..."
 fi
 
 if ! hash zsh 2>/dev/null; then
@@ -100,21 +105,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     $DOTFILES_DIR/system/osx
 else
     echo "----------> Skipping OS X config..."
-fi
-
-echo
-read -p "Do you want to install default Casks? [y/n] " -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "----------> Installing Homebrew Casks..."
-    echo
-    source $DOTFILES_DIR/brew/Caskfile
-
-    echo
-    echo "----------> Linking iTerm config..."
-    ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
-else
-    echo "----------> Skipping cask installation..."
 fi
 
 echo
