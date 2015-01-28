@@ -3,7 +3,6 @@ tap 'caskroom/cask'
 tap 'caskroom/versions'
 
 brew 'git'
-brew 'docker'
 brew 'boot2docker'
 brew 'go'
 brew 'heroku-toolbelt'
