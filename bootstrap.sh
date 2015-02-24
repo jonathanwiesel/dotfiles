@@ -56,7 +56,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
   brew tap Homebrew/brewdler
   cd $DOTFILES_DIR
-  brew brewdle
+  brew brewdle --verbose
 
   echo "----------> Linking iTerm config..."
   ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
