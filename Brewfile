@@ -1,6 +1,7 @@
 tap 'homebrew/dupes'
 tap 'caskroom/cask'
 tap 'caskroom/versions'
+tap 'gapple/services'
 
 brew 'git'
 brew 'boot2docker'
