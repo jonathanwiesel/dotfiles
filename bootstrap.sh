@@ -91,7 +91,7 @@ if hash npm 2>/dev/null; then
     echo
     echo "----------> Installing NPM global modules..."
     echo
-    npm install -g awm bower express-generator forever grunt-cli mean-cli nodemon node-inspector sails yo
+    npm install -g awm bower express-generator forever grunt-cli mean-cli nodemon node-inspector sails slap yo
   else
     echo "----------> Skipping NPM global modules..."
   fi
