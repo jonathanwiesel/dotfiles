@@ -1,8 +1,7 @@
 tap 'homebrew/dupes'
-tap 'caskroom/cask'
-tap 'caskroom/versions'
 tap 'gapple/services'
 
+brew 'caskroom/cask/brew-cask'
 brew 'git'
 brew 'boot2docker'
 brew 'go'
@@ -16,7 +15,8 @@ brew 'rsync'
 brew 'ruby-build'
 brew 'ssh-copy-id'
 brew 'tree'
-brew 'brew-cask'
+
+tap 'caskroom/versions'
 
 # Quicklook plugins
 cask 'betterzipql'
