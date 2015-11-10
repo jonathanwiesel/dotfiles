@@ -1,6 +1,7 @@
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export EDITOR=atom
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # if go is installed export GOPATH
 if [[ ( -e `which go` && -e "$HOME/.go" ) ]]; then export GOPATH=$HOME/.go && export PATH="$GOPATH/bin:$PATH"; fi
