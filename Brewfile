@@ -1,5 +1,7 @@
+cask_args appdir: '/Applications'
+
 tap 'homebrew/dupes'
-tap 'gapple/services'
+tap 'homebrew/services'
 
 brew 'caskroom/cask/brew-cask'
 brew 'git'
