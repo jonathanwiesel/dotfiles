@@ -19,7 +19,6 @@ brew 'tree'
 # Quicklook plugins
 cask 'betterzipql'
 cask 'cert-quicklook'
-cask 'kitematic'
 cask 'provisionql'
 cask 'qlcolorcode'
 cask 'qlstephen'
