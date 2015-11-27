@@ -43,6 +43,7 @@ else
 
     if [ $? -ne 0 ]; then
       echo "You need to fix the warnings/errors thrown by brew doctor. Then run the script again."
+      exit
     fi
 fi
 
@@ -115,15 +116,6 @@ else
     echo "----------> Installing Atom packages..."
     echo
     apm stars --user jonathanwiesel --install
-fi
-
-echo
-read -p "Do you want to install Alfred workflows? (Remember to enable PowerPack before this!) [y/n] " -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    source $DOTFILES_DIR/alfred/workflows.sh
-else
-    echo "----------> Skipping Alfred workflows..."
 fi
 
 if [[ "$SHELL" != */zsh ]]; then
