@@ -26,6 +26,8 @@ cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
 
+tap 'caskroom/versions'
+
 # Apps
 cask 'alfred'
 cask 'atom'
@@ -58,6 +60,7 @@ cask 'sonarr'
 cask 'sonarr-menu'
 cask 'spectacle'
 cask 'spotify'
+cask 'sublime-text3'
 cask 'teamviewer'
 cask 'the-unarchiver'
 cask 'utorrent'
