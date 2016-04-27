@@ -9,7 +9,7 @@ alias gch="git checkout"
 alias gb="git branch"
 alias gr="git remote"
 alias gl="git log --oneline --decorate --all --graph"
-alias gd="git diff"
+alias gd="git diff --color | diff-so-fancy"
 alias gdt="git difftool"
 
 # Vagrant aliases
