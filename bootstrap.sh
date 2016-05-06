@@ -56,9 +56,18 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo
 
   brew tap Homebrew/bundle
-  cd $DOTFILES_DIR
-  brew bundle --verbose
 
+  echo
+  read -p "----------> Is this a work computer? [y/n] " -r
+  echo
+
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+      brew bundle --verbose --file=$DOTFILES_DIR/Brewfiles/Work
+  else
+      brew bundle --verbose --file=$DOTFILES_DIR/Brewfiles/Home
+  fi
+
+  echo
   echo "----------> Linking iTerm config..."
   ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 else
