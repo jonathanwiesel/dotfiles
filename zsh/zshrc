@@ -37,3 +37,7 @@ source $ZSH/*.zsh-theme
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

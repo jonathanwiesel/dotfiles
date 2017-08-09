@@ -4,6 +4,7 @@ alias ga="git add"
 alias gaa="git add --all"
 alias gc="git commit -m "
 alias gp="git push"
+alias gpsu="git push --set-upstream origin master"
 alias gpl="git pull"
 alias gch="git checkout"
 alias gb="git branch"
@@ -38,3 +39,4 @@ alias _=sudo
 
 alias ls='ls -G'
 alias reload!=". ~/.zshrc"
+alias bower="noglob bower"
