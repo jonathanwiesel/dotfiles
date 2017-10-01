@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/dupes'
 tap 'homebrew/services'
 tap 'caskroom/cask'
+tap 'pasonatquila/salesforce'
 
 brew 'diff-so-fancy'
 brew 'git'
@@ -28,6 +29,7 @@ tap 'caskroom/versions'
 tap 'caskroom/drivers'
 
 # Apps
+cask 'dataloader'
 cask 'dash'
 cask 'docker-toolbox'
 cask 'firefox'
