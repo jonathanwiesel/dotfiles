@@ -101,7 +101,7 @@ if hash npm 2>/dev/null; then
     echo
     echo "----------> Installing NPM global modules..."
     echo
-    npm install -g bower express-generator grunt-cli nativefier slap
+    npm install -g express-generator grunt-cli nativefier slap yarn
   else
     echo "----------> Skipping NPM global modules..."
   fi
@@ -116,15 +116,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     $DOTFILES_DIR/system/osx
 else
     echo "----------> Skipping OS X config..."
-fi
-
-echo
-if ! hash apm 2>/dev/null; then
-    echo "----------> Atom is not installed. Skipping atom packages installation..."
-else
-    echo "----------> Installing Atom packages..."
-    echo
-    apm stars --user jonathanwiesel --install
 fi
 
 if [[ "$SHELL" != */zsh ]]; then
