@@ -40,3 +40,12 @@ alias _=sudo
 alias ls='ls -G'
 alias reload!=". ~/.zshrc"
 alias bower="noglob bower"
+
+
+# Salesforce DX
+alias dxp="sfdx force:source:push"
+alias dxpl="sfdx force:source:pull"
+alias dxco="sfdx force:org:create"
+alias dxoo="sfdx force:org:open"
+alias dxlo="sfdx force:org:list"
+alias dxt="sfdx force:apex:test:run --resultformat human --synchronous --loglevel error --codecoverage"
