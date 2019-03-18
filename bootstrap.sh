@@ -101,7 +101,7 @@ if hash npm 2>/dev/null; then
     echo
     echo "----------> Installing NPM global modules..."
     echo
-    npm install -g express-generator grunt-cli nativefier slap yarn
+    npm install -g express-generator grunt-cli nativefier salesforcedx yarn
   else
     echo "----------> Skipping NPM global modules..."
   fi
