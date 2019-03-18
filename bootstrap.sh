@@ -107,17 +107,6 @@ if hash npm 2>/dev/null; then
   fi
 fi
 
-
-echo
-read -p "----------> Would you like to setup the custom OS X configuration? [y/n] " -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "----------> Setting up OS X config..."
-    $DOTFILES_DIR/system/osx
-else
-    echo "----------> Skipping OS X config..."
-fi
-
 if [[ "$SHELL" != */zsh ]]; then
     echo
     echo "----------> Changing shell to ZSH..."
