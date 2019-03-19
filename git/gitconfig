@@ -16,7 +16,7 @@
 	editor = subl -n -w
 	precomposeunicode = true
 	autocrlf = input
-	excludesfile = /Users/jonathanwiesel/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [fetch]
 	prune = true
 [credential]
