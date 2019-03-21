@@ -21,6 +21,7 @@ cask 'quicklook-csv'
 
 tap 'caskroom/versions'
 tap 'caskroom/drivers'
+tap 'caskroom/fonts'
 
 # Apps
 cask 'betterzip'
@@ -28,6 +29,7 @@ cask 'dataloader'
 cask 'dash'
 cask 'docker-toolbox'
 cask 'firefox'
+cask 'font-fira-code'
 cask 'gimp'
 cask 'google-chrome'
 cask 'iterm2'

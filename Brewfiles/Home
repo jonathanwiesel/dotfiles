@@ -19,10 +19,12 @@ cask 'quicklook-csv'
 
 tap 'caskroom/versions'
 tap 'caskroom/drivers'
+tap 'caskroom/fonts'
 
 # Apps
 cask 'betterzip'
 cask 'dash'
+cask 'font-fira-code'
 cask 'gimp'
 cask 'google-chrome'
 cask 'iterm2'
