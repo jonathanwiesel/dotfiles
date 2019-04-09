@@ -120,6 +120,10 @@ if hash code 2>/dev/null; then
           --install-extension HookyQR.beautify \
           --install-extension JohnAaronNelson.forcecode \
           --install-extension salesforce.salesforcedx-vscode \
+          --install-extension sGruntfuggly.todo-tree \
+          --install-extension alefragnani.project-manager \
+          --install-extension btamburrino.apex-javadoc \
+          --install-extension Shan.code-settings-sync
   else
     echo "----------> Skipping VS Code extensions..."
   fi
