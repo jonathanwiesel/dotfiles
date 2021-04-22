@@ -5,18 +5,17 @@
 	email = jonathanwiesel@gmail.com
 [pull]
 	rebase = true
-[difftool "Kaleidoscope"]
-    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-	path = /usr/local/bin
+[difftool "default-difftool"]
+        cmd = code --wait --diff $LOCAL $REMOTE
 [diff]
-	tool = Kaleidoscope
+	tool = default-difftool
 [difftool]
 	prompt = false
 [core]
-	editor = subl -n -w
+	editor = code --wait
 	precomposeunicode = true
 	autocrlf = input
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/jonathanwiesel/.gitignore_global
 [fetch]
 	prune = true
 [credential]
@@ -30,5 +29,7 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.2.4/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[alias]
+    mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
