@@ -107,6 +107,20 @@ if hash npm 2>/dev/null; then
   fi
 fi
 
+if hash sfdx 2>/dev/null; then
+  echo
+  read -p "----------> Would you like to install default sfdx plugins? [y/n] " -r
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo
+    echo "----------> Installing SFDX plugins..."
+    echo
+    sfdx plugins:install @amphro/streamer @oclif/plugin-autocomplete @salesforce/lwc-dev-server @salesforce/sfdx-scanner sfdmu sfdx-git-delta sfdx-valkyrie sfdx-waw-plugin sfpowerkit shane-sfdx-plugins texei-sfdx-plugin
+  else
+    echo "----------> Skipping SFDX plugins..."
+  fi
+fi
+
 if [[ "$SHELL" != */zsh ]]; then
     echo
     echo "----------> Changing shell to ZSH..."
