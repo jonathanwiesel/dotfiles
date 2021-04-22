@@ -5,6 +5,7 @@ tap 'pasonatquila/salesforce'
 
 brew 'diff-so-fancy'
 brew 'git'
+brew 'gitmoji'
 brew 'heroku-toolbelt'
 brew 'mariadb'
 brew 'node'

@@ -4,6 +4,7 @@ tap 'homebrew/services'
 
 brew 'diff-so-fancy'
 brew 'git'
+brew 'gitmoji'
 brew 'heroku-toolbelt'
 brew 'node'
 brew 'ssh-copy-id'

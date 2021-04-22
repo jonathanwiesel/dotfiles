@@ -2,7 +2,7 @@
 alias gs="git status -s"
 alias ga="git add"
 alias gaa="git add --all"
-alias gc="git commit -m "
+alias gc="gitmoji -c "
 alias gp="git push"
 alias gpsu="git push --set-upstream origin master"
 alias gpl="git pull"
