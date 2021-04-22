@@ -41,7 +41,7 @@ cask 'licecap'
 cask 'postman'
 cask 'rectangle'
 cask 'sequel-pro'
-cask 'soapui'
+cask 'soapui', args: {no_quarantine: true}
 cask 'sourcetree'
 cask 'spotify'
 cask 'the-unarchiver'
