@@ -19,9 +19,9 @@ cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
 
-tap 'caskroom/versions'
-tap 'caskroom/drivers'
-tap 'caskroom/fonts'
+tap 'homebrew/cask-versions'
+tap 'homebrew/cask-drivers'
+tap 'homebrew/cask-fonts'
 
 # Apps
 cask 'alfred'
