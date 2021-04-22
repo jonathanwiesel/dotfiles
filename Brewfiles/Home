@@ -1,11 +1,12 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/services'
+tap 'heroku/brew'
 
 brew 'diff-so-fancy'
 brew 'git'
 brew 'gitmoji'
-brew 'heroku-toolbelt'
+brew 'heroku'
 brew 'node'
 brew 'pmd'
 brew 'ssh-copy-id'
