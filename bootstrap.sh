@@ -107,28 +107,6 @@ if hash npm 2>/dev/null; then
   fi
 fi
 
-
-if hash code 2>/dev/null; then
-  echo
-  read -p "----------> Would you like to install default VS Code extensions? [y/n] " -r
-  echo
-  if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo
-    echo "----------> Installing VS Code extensions..."
-    echo
-    code --install-extension dbaeumer.vscode-eslint \
-          --install-extension HookyQR.beautify \
-          --install-extension JohnAaronNelson.forcecode \
-          --install-extension salesforce.salesforcedx-vscode \
-          --install-extension sGruntfuggly.todo-tree \
-          --install-extension alefragnani.project-manager \
-          --install-extension btamburrino.apex-javadoc \
-          --install-extension Shan.code-settings-sync
-  else
-    echo "----------> Skipping VS Code extensions..."
-  fi
-fi
-
 if [[ "$SHELL" != */zsh ]]; then
     echo
     echo "----------> Changing shell to ZSH..."
