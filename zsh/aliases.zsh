@@ -13,19 +13,8 @@ alias gl="git log --oneline --decorate --all --graph"
 alias gd="git diff --color | diff-so-fancy"
 alias gdt="git difftool"
 
-# Vagrant aliases
-alias vu="vagrant up"
-alias vh="vagrant halt"
-alias vd="vagrant destroy"
-alias vss="vagrant ssh"
-alias vb="vagrant box"
-alias vin="vagrant init"
-alias vsu="vagrant suspend"
-alias vre="vagrant resume"
-alias vs="vagrant status"
-
 # Homebrew aliases
-alias bc="brew cask"
+alias bc="brew --cask"
 alias bs="brew services"
 alias bl="brew list"
 
@@ -41,11 +30,10 @@ alias ls='ls -G'
 alias reload!=". ~/.zshrc"
 alias bower="noglob bower"
 
-
 # Salesforce DX
-alias dxp="sfdx force:source:push"
-alias dxpl="sfdx force:source:pull"
-alias dxco="sfdx force:org:create"
-alias dxoo="sfdx force:org:open"
-alias dxlo="sfdx force:org:list"
-alias dxt="sfdx force:apex:test:run --resultformat human --synchronous --loglevel error --codecoverage"
+alias dxp="sf force source push"
+alias dxpl="sf force source pull"
+alias dxco="sf force org create"
+alias dxoo="sf force org open"
+alias dxlo="sf force org list"
+alias dxt="sf force apex test run --resultformat human --synchronous --loglevel error --codecoverage"

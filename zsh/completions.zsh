@@ -58,10 +58,3 @@ if [ "x$COMPLETION_WAITING_DOTS" = "xtrue" ]; then
   zle -N expand-or-complete-with-dots
   bindkey "^I" expand-or-complete-with-dots
 fi
-
-gocompletion="$(brew --prefix)/share/zsh/site-functions/go"
-
-if test -f $gocompletion
-then
-  source <(cat $gocompletion)
-fi

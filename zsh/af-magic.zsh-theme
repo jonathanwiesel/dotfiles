@@ -164,7 +164,7 @@ function title {
 }
 
 ZSH_THEME_TERM_TAB_TITLE_IDLE="%15<..<%~%<<" #15 char left truncated PWD
-ZSH_THEME_TERM_TITLE_IDLE="%n@%m: %~"
+ZSH_THEME_TERM_TITLE_IDLE="%n: %~"
 
 function precmd() {
   title $ZSH_THEME_TERM_TAB_TITLE_IDLE $ZSH_THEME_TERM_TITLE_IDLE
@@ -195,7 +195,7 @@ if type "virtualenv_prompt_info" > /dev/null
 then
 	RPROMPT='$(virtualenv_prompt_info)$my_gray%n@%m%{$reset_color%}%'
 else
-	RPROMPT='$my_gray%n@%m%{$reset_color%}%'
+	RPROMPT='$my_gray%n@%m%{$reset_color%}'
 fi
 
 # git settings

@@ -67,9 +67,6 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
       brew bundle --verbose --file=$DOTFILES_DIR/Brewfiles/Home
   fi
 
-  echo
-  echo "----------> Linking iTerm config..."
-  ln -sfn $DOTFILES_DIR/iterm/$ITERM_SETTINGS ~/Library/Preferences/$ITERM_SETTINGS
 else
   echo "----------> Skipping Homebrew formulas and casks..."
 fi
@@ -101,7 +98,7 @@ if hash npm 2>/dev/null; then
     echo
     echo "----------> Installing NPM global modules..."
     echo
-    npm install -g eslint express-generator grunt-cli nativefier sfdx-cli yarn
+    npm install -g eslint yarn
   else
     echo "----------> Skipping NPM global modules..."
   fi
@@ -115,7 +112,7 @@ if hash sfdx 2>/dev/null; then
     echo
     echo "----------> Installing SFDX plugins..."
     echo
-    sfdx plugins:install @amphro/streamer @oclif/plugin-autocomplete @salesforce/lwc-dev-server @salesforce/sfdx-scanner sfdmu sfdx-git-delta sfdx-valkyrie sfdx-waw-plugin sfpowerkit shane-sfdx-plugins texei-sfdx-plugin
+    sf plugins install @amphro/streamer @oclif/plugin-autocomplete @salesforce/lwc-dev-server @salesforce/sfdx-scanner sfdx-git-delta texei-sfdx-plugin
   else
     echo "----------> Skipping SFDX plugins..."
   fi
