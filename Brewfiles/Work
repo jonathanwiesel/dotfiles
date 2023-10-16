@@ -25,6 +25,7 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 
 # Apps
+cast 'arc'
 cask 'dataloader'
 cask 'font-fira-code'
 cask 'font-jetbrains-mono'
