@@ -36,7 +36,7 @@ if hash brew 2>/dev/null; then
 else
     echo "----------> Installing Homebrew..."
     echo
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install)"
+    bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 
     echo
     brew doctor
